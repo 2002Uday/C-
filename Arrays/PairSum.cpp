@@ -19,18 +19,23 @@ int pairSum(int *input, int size, int x)
 int main()
 {
     int t;
+    cout<<"Enter Numbers of Test Cases: ";
     cin>> t;
     int n;
     int x;
     for(int i = 1; i <= t; i++)
     {
+        cout<<"Enter Size of Array: ";
         cin>>n;
         int arr[n];
+        cout<<"Enter Numbers of Element: ";
         for(int j = 0; j < n; j++)
         {
             cin>> arr[j];
         }
+        cout<<"Enter Target: ";
         cin>>x ;
+        cout<<"Number of Pairs:";
         cout<<pairSum(arr,n,x);
     }
 }
